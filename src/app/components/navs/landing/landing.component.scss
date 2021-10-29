@@ -1,0 +1,42 @@
+h1 {
+    font-weight: 900;
+    font-size: 4em;
+    color: white;
+    font-family: Roboto;
+    text-transform: uppercase;
+}
+
+.landing .btn {
+    border: 2px solid white;
+    color: white
+}
+
+.overlay {
+    width: 100%;
+    background: linear-gradient(-45deg, red, #0A0E22, red);
+    height: 80vh;
+    position: absolute;
+    z-index: -1;
+    border-bottom-left-radius: 70%;
+    border-bottom-right-radius: 70%;
+    transform: scaleX(1.3);
+}
+
+.overlay1 {
+    width: 100%;
+    background: linear-gradient(-45deg, red, #0A0E22, red);
+    height: 80vh;
+    position: absolute;
+    z-index: -1;
+    margin-top: 155vh;
+    transform: scaleX(1.3);
+}
+
+.landing-img {
+    right: 0;
+    width: 100%;
+    transform: scaleX(-1) scale(1.5) translate(-5vw, 0);
+    z-index: -1;
+    margin-top: 5rem;
+    padding-top: 5rem;
+}

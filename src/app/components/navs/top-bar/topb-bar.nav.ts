@@ -8,6 +8,10 @@ export const TopBarNavs: TopNav[] = [
 		route: '/admin/',
 	},
 	{
+		name: 'Popular Items',
+		route: '/admin/',
+	},
+	{
 		name: 'Menu',
 		route: '/admin/',
 	},
@@ -16,19 +20,23 @@ export const TopBarNavs: TopNav[] = [
 		route: '/admin/',
 	},
 	{
+		name: 'Info',
+		route: '/admin/',
+	},
+	{
 		name: 'Contact',
 		route: '/admin/',
 	},
 	{
-		name: 'Blog',
-		route: '/admin/',
+		name: 'Jobs',
+		route: '/staff/',
 	},
 	{
-		name: 'Admin',
-		route: '/admin/',
+		name: 'Internships',
+		route: '/staff/',
 	},
 	{
-		name: 'Staff',
+		name: 'Sign-in',
 		route: '/staff/',
 	},
 ]

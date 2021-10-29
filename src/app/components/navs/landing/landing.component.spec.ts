@@ -5,6 +5,9 @@ import { LandingComponent } from './landing.component'
 describe('LandingComponent', () => {
 	let component: LandingComponent
 	let fixture: ComponentFixture<LandingComponent>
+	let h1: HTMLElement
+	let button: HTMLElement
+	let img: HTMLElement
 
 	beforeEach(async () => {
 		await TestBed.configureTestingModule({
@@ -13,6 +16,9 @@ describe('LandingComponent', () => {
 		fixture = TestBed.createComponent(LandingComponent)
 		component = fixture.componentInstance
 		fixture.detectChanges()
+		h1 = fixture.nativeElement.querySelector('h1')
+		button = fixture.nativeElement.querySelector('button')
+		img = fixture.nativeElement.querySelector('img')
 	})
 
 	it('should create the component', () => {
@@ -20,9 +26,17 @@ describe('LandingComponent', () => {
 		expect(component).toBeTruthy()
 	})
 
-	it('should have a button.', () => {})
+	it('should have a headline.', () => {
+		expect(h1).toBeTruthy()
+	})
 
-	it('should have an Image of Payag Ave.', () => {})
+	it('should have a button.', () => {
+		expect(button).toBeTruthy()
+	})
+
+	it('should have a headline Image', () => {
+		expect(img).toBeTruthy()
+	})
 
 	it('should be responsive.', () => {})
 

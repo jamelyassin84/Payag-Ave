@@ -40,31 +40,17 @@ describe('TopBarComponent', () => {
 		expect(li).toBeTruthy()
 	})
 
-	// it(`it should not proceed if user is unauthenticated`, () => {
-	// 	expect(component).toBeTruthy()
-	// })
+	it(`it should not proceed if user is unauthenticated`, () => {})
 
-	// it(`it should save credentials to Local Storage`, () => {
-	// 	expect(component).toBeTruthy()
-	// })
+	it(`it should save credentials to Local Storage`, () => {})
 
-	// it(`LocalStorage key should have token and user`, () => {
-	// 	expect(component).toBeTruthy()
-	// })
+	it(`LocalStorage key should have token and user`, () => {})
 
-	// it(`LocalStorage key should have token should not be null`, () => {
-	// 	expect(component).toBeTruthy()
-	// })
+	it(`LocalStorage key should have token should not be null`, () => {})
 
-	// 	it(`LocalStorage key should have token user should not be null`, () => {
-	// 	expect(component).toBeTruthy()
-	// })
+	it(`LocalStorage key should have token user should not be null`, () => {})
 
-	// it(`'Login as Admin' should navigate to /admin`, () => {
-	// 	expect(component).toBeTruthy()
-	// })
+	it(`'Login as Admin' should navigate to /admin`, () => {})
 
-	// it(`'Login as Staff' should navigate to /staff`, () => {
-	// 	expect(component).toBeTruthy()
-	// })
+	it(`'Login as Staff' should navigate to /staff`, () => {})
 })

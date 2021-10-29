@@ -1,3 +1,9 @@
 nav {
-    background-color: #0A0E22 !important;
+    position: fixed;
+    width: 100%;
+    z-index: 999999;
+}
+
+.icons {
+    cursor: pointer;
 }
