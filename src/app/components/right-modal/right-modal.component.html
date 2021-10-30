@@ -1,10 +1,10 @@
-<div class="backdrop">
+<div class="backdrop" *ngIf="!close">
     <div class="modal-content">
         <div class="modal-header d-flex">
             <div class="modal-title">
                 <h1>{{title}}</h1>
             </div>
-            <div class="close-btn ml-auto mr-2" role="button">
+            <div (click)="closeModal()" class="close-btn ml-auto mr-2" role="button">
                 <h1 class="bi bi-x-lg "></h1>
             </div>
         </div>

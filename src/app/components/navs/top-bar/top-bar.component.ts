@@ -1,3 +1,4 @@
+import { ModalService } from './../../../services/modal.service'
 import { Component, OnInit } from '@angular/core'
 import { LandingService } from 'src/app/services/landing/landing.service'
 import {
@@ -19,11 +20,18 @@ export class TopBarComponent implements OnInit {
 	navs1: ModalNav[] = ModalTopNavs
 	icons: TopIcons[] = TopBarIcons
 
-	constructor(private service: LandingService) {}
+	constructor(
+		private service: LandingService,
+		private modalService: ModalService
+	) {}
 
 	ngOnInit(): void {}
 
 	scroll(id: string | any) {
 		this.service.scrollTo(id)
+	}
+
+	open(data: ModalNav | any) {
+		this.modalService.openModal('right', data)
 	}
 }

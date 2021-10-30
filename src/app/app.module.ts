@@ -10,8 +10,9 @@ import { NavbarComponent } from './components/modules/navbar/navbar.component'
 import { SidebarComponent } from './components/modules/sidebar/sidebar.component'
 import { SideBarComponent } from './components/navs/side-bar/side-bar.component'
 import { TopBarComponent } from './components/navs/top-bar/top-bar.component'
-import { LandingComponent } from './components/navs/landing/landing.component';
+import { LandingComponent } from './components/navs/landing/landing.component'
 import { RightModalComponent } from './components/right-modal/right-modal.component'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 @NgModule({
 	declarations: [
@@ -21,9 +22,15 @@ import { RightModalComponent } from './components/right-modal/right-modal.compon
 		NavbarComponent,
 		SideBarComponent,
 		LandingComponent,
-  RightModalComponent,
+		RightModalComponent,
 	],
-	imports: [BrowserModule, AppRoutingModule, NgbModule, IvyCarouselModule],
+	imports: [
+		BrowserModule,
+		BrowserAnimationsModule,
+		AppRoutingModule,
+		NgbModule,
+		IvyCarouselModule,
+	],
 	providers: [],
 	bootstrap: [AppComponent],
 })

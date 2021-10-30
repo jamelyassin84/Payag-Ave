@@ -32,15 +32,30 @@ export const TopBarNavs: TopNav[] = [
 export const ModalTopNavs: ModalNav[] = [
 	{
 		name: 'Jobs',
-		title: 'Payag Ave. Jobs',
+		data: {
+			title: 'Payag Ave. Jobs',
+			body: 'tae',
+			actionButtonName: 'Apply',
+			callback: void 0,
+		},
 	},
 	{
 		name: 'Internships',
-		title: 'Internships for Payag Ave.',
+		data: {
+			title: 'Internships at Payag Ave.',
+			body: 'tae',
+			actionButtonName: 'Apply',
+			callback: void 0,
+		},
 	},
 	{
 		name: 'Sign-in',
-		title: 'Sign-in as Admin or Staff',
+		data: {
+			title: 'Sign-in as Admin or Staff',
+			body: 'tae',
+			actionButtonName: 'Sign-in',
+			callback: void 0,
+		},
 	},
 ]
 
@@ -61,9 +76,12 @@ export const TopBarIcons: TopIcons[] = [
 
 export type ModalNav = {
 	name: string
-	title: string
-	template?: string
-	callback?: Function
+	data: {
+		title: string
+		body: string
+		callback?: Function
+		actionButtonName: string
+	}
 }
 
 export type TopNav = {
