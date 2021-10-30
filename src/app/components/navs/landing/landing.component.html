@@ -1,7 +1,7 @@
 <div class="overlay"></div>
 <div class="overlay1"></div>
 <div class="container">
-    <div class="row pt-5 ">
+    <div class="row pt-5 " id="home">
         <div class="col-md-6 landing mt-5 pt-5">
             <h1 class="text-warning">Everyday affordable prices for you!</h1>
             <p class="text-white mt-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit, id architecto. Saepe accusantium optio minus facilis. Quisquam iure enim veniam,</p>
@@ -13,7 +13,7 @@
         </div>
     </div>
     <div class="row pt-5 mt-5">
-        <div class="col-md-12 landing mt-5 pt-5">
+        <div class="col-md-12 landing mt-5 pt-5" id="about">
             <h1 class="text-center text-black mt-5">Who we are</h1>
             <div class="row mt-5">
                 <div class="col-md-7">
@@ -24,7 +24,11 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-12 landing mt-5 pt-5">
+
+        <div class="col-md-12 landing mt-5 pt-5 mb-5" id="popular-items">
+            <br>
+            <br>
+            <br>
             <h1 class="text-center mt-5">Popular Items</h1>
             <carousel [height]="500" [cellsToShow]="1" [dots]="true" [autoplay]="true" [autoplayInterval]="1500" [borderRadius]="5" [margin]="0">
                 <div *ngFor="let image of images" class="carousel-cell">
@@ -32,9 +36,9 @@
                 </div>
             </carousel>
         </div>
-        <div class="col-md-12 landing mt-5 pt-5">
+        <div class="col-md-12 landing mt-5 pt-5 mb-5">
+            <div class="m-5" id="menu">.</div>
             <h1 class="text-center text-black mt-5">Our Menu</h1>
-
             <div class="d-flex menu">
                 <button class="btn btn-lg btn-danger">Appetizers</button>
                 <button class="btn btn-lg btn-danger">Short Orders</button>
@@ -44,11 +48,16 @@
             </div>
 
         </div>
-        <div class="col-md-12 landing mt-5 pt-5">
+        <div class="col-md-12 landing mt-5 pt-5" id="gallery">
             <h1 class="text-center text-black mt-5">Gallery</h1>
-            <h5 class="text-center m-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur nostrum laborum labore possimus, veniam repudiandae inventore cum obcaecati quis quam nemo, quisquam, quos neque officiis repellat tempore repellendus recusandae vero!</h5>
+            <carousel [height]="500" [cellsToShow]="1" [dots]="true" [autoplay]="true" [autoplayInterval]="1500" [borderRadius]="5" [margin]="0">
+                <div *ngFor="let image of images" class="carousel-cell">
+                    <img [src]="image" />
+                </div>
+            </carousel>
         </div>
-        <div class="col-md-12 landing mt-5 pt-5">
+
+        <div class="col-md-12 landing mt-5 pt-5" id="info">
             <h1 class="text-center text-black mt-5">What we do</h1>
             <h5 class="text-center m-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur nostrum laborum labore possimus, veniam repudiandae inventore cum obcaecati quis quam nemo, quisquam, quos neque officiis repellat tempore repellendus recusandae vero!</h5>
         </div>
@@ -74,6 +83,10 @@
         </div>
         <div class="col-md-12 landing mt-5 pt-5">
             <h1 class="text-center text-black mt-5">Reviews</h1>
+            <h5 class="text-center m-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur nostrum laborum labore possimus, veniam repudiandae inventore cum obcaecati quis quam nemo, quisquam, quos neque officiis repellat tempore repellendus recusandae vero!</h5>
+        </div>
+        <div class="col-md-12 landing mt-5 pt-5" id="contact">
+            <h1 class="text-center text-black mt-5">Contact Us</h1>
             <h5 class="text-center m-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur nostrum laborum labore possimus, veniam repudiandae inventore cum obcaecati quis quam nemo, quisquam, quos neque officiis repellat tempore repellendus recusandae vero!</h5>
         </div>
     </div>

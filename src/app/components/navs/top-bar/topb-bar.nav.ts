@@ -1,50 +1,48 @@
 export const TopBarNavs: TopNav[] = [
 	{
 		name: 'Home',
-		route: '/admin/',
+		scrollTo: 'home',
 	},
 	{
 		name: 'About',
-		route: '/admin/',
+		scrollTo: 'about',
 	},
 	{
 		name: 'Popular Items',
-		route: '/admin/',
+		scrollTo: 'popular-items',
 	},
 	{
 		name: 'Menu',
-		route: '/admin/',
+		scrollTo: 'menu',
 	},
 	{
 		name: 'Gallery',
-		route: '/admin/',
+		scrollTo: 'gallery',
 	},
 	{
 		name: 'Info',
-		route: '/admin/',
+		scrollTo: 'info',
 	},
 	{
 		name: 'Contact',
-		route: '/admin/',
-	},
-	{
-		name: 'Jobs',
-		route: '/staff/',
-	},
-	{
-		name: 'Internships',
-		route: '/staff/',
-	},
-	{
-		name: 'Sign-in',
-		route: '/staff/',
+		scrollTo: 'contact',
 	},
 ]
 
-export type TopNav = {
-	name: string
-	route: string
-}
+export const ModalTopNavs: ModalNav[] = [
+	{
+		name: 'Jobs',
+		title: 'Payag Ave. Jobs',
+	},
+	{
+		name: 'Internships',
+		title: 'Internships for Payag Ave.',
+	},
+	{
+		name: 'Sign-in',
+		title: 'Sign-in as Admin or Staff',
+	},
+]
 
 export const TopBarIcons: TopIcons[] = [
 	{
@@ -60,6 +58,18 @@ export const TopBarIcons: TopIcons[] = [
 		route: 'facebook',
 	},
 ]
+
+export type ModalNav = {
+	name: string
+	title: string
+	template?: string
+	callback?: Function
+}
+
+export type TopNav = {
+	name: string
+	scrollTo?: string
+}
 
 export type TopIcons = {
 	icon: string

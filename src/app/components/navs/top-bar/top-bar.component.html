@@ -2,7 +2,7 @@
     <h5 class="text-white bold m-0 ml-5 mr-5">PAYAG AVE.</h5>
     <ul class="navbar-nav m-auto mb-2  pl-5">
         <li class="nav-item mr-2" *ngFor="let nav of navs">
-            <button class="btn text-white ">{{nav.name | uppercase}}</button>
+            <a (click)="scroll(nav.scrollTo)" class="btn text-white ">{{nav.name | uppercase}}</a>
         </li>
     </ul>
     <ul class="d-flex">

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core'
+import { LandingService } from 'src/app/services/landing.service'
 import { TopBarIcons, TopBarNavs, TopIcons, TopNav } from './topb-bar.nav'
 
 @Component({
@@ -9,7 +10,12 @@ import { TopBarIcons, TopBarNavs, TopIcons, TopNav } from './topb-bar.nav'
 export class TopBarComponent implements OnInit {
 	navs: TopNav[] = TopBarNavs
 	icons: TopIcons[] = TopBarIcons
-	constructor() {}
+
+	constructor(private service: LandingService) {}
 
 	ngOnInit(): void {}
+
+	scroll(id: string | any) {
+		this.service.scrollTo(id)
+	}
 }
