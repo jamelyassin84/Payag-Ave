@@ -1,8 +1,8 @@
 <div class="backdrop" *ngIf="!close" (click)="closeModal()" [@content]>
     <div appStopPropagation class="modal-content">
-        <div class="modal-header d-flex">
+        <div class="modal-header d-flex bg-danger">
             <div class="modal-title text-center w-100">
-                <h1 class="text-center">{{title}}</h1>
+                <h1 class="text-center text-white">{{title}}</h1>
             </div>
             <div (click)="closeModal()" class="close-btn ml-auto mr-2" role="button">
                 <h1 class="bi bi-x-lg "></h1>
