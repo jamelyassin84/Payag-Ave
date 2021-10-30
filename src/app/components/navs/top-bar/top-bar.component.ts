@@ -1,6 +1,13 @@
 import { Component, OnInit } from '@angular/core'
 import { LandingService } from 'src/app/services/landing.service'
-import { TopBarIcons, TopBarNavs, TopIcons, TopNav } from './topb-bar.nav'
+import {
+	ModalNav,
+	ModalTopNavs,
+	TopBarIcons,
+	TopBarNavs,
+	TopIcons,
+	TopNav,
+} from './topb-bar.nav'
 
 @Component({
 	selector: 'app-top-bar',
@@ -9,6 +16,7 @@ import { TopBarIcons, TopBarNavs, TopIcons, TopNav } from './topb-bar.nav'
 })
 export class TopBarComponent implements OnInit {
 	navs: TopNav[] = TopBarNavs
+	navs1: ModalNav[] = ModalTopNavs
 	icons: TopIcons[] = TopBarIcons
 
 	constructor(private service: LandingService) {}
