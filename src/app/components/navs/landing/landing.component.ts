@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core'
 import { LandingService } from 'src/app/services/landing/landing.service'
+import { ModalService } from 'src/app/services/modal.service'
+import { ModalNav } from '../top-bar/topb-bar.nav'
+import { ModalMenu } from './Menu'
 import { PopularItems } from './PopularItems'
 
 @Component({
@@ -9,8 +12,12 @@ import { PopularItems } from './PopularItems'
 })
 export class LandingComponent implements OnInit {
 	images: string[] = PopularItems
+	menu: ModalNav[] = ModalMenu
 
-	constructor(private service: LandingService) {
+	constructor(
+		private service: LandingService,
+		private modalService: ModalService
+	) {
 		this.service.getScrollPosition().subscribe((to) => {
 			this.scroll(to)
 		})
@@ -24,5 +31,9 @@ export class LandingComponent implements OnInit {
 			block: 'start',
 			inline: 'end',
 		})
+	}
+
+	open(data: ModalNav | any) {
+		this.modalService.openModal('right', data)
 	}
 }

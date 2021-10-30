@@ -1,8 +1,5 @@
-import { SideBarComponent } from './../side-bar/side-bar.component'
 import { ComponentFixture, TestBed } from '@angular/core/testing'
 import { TopBarComponent } from './top-bar.component'
-import { By } from '@angular/platform-browser'
-import { DebugElement } from '@angular/core'
 import { TopNav } from './topb-bar.nav'
 
 describe('TopBarComponent', () => {

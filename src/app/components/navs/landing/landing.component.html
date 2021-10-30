@@ -40,11 +40,8 @@
             <div class="m-5" id="menu">.</div>
             <h1 class="text-center text-black mt-5">Our Menu</h1>
             <div class="d-flex menu">
-                <button class="btn btn-lg btn-danger">Appetizers</button>
-                <button class="btn btn-lg btn-danger">Short Orders</button>
-                <button class="btn btn-lg btn-danger">Payag Savers</button>
-                <button class="btn btn-lg btn-danger">Hards</button>
-                <button class="btn btn-lg btn-danger">Beers</button>
+                <button (click)="open(item.data)" *ngFor="let item of menu" class="btn btn-lg btn-danger">{{item.name}}</button>
+
             </div>
 
         </div>
