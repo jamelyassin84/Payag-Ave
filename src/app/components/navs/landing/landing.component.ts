@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core'
-import { LandingService } from 'src/app/services/landing.service'
+import { LandingService } from 'src/app/services/landing/landing.service'
 import { PopularItems } from './PopularItems'
 
 @Component({
