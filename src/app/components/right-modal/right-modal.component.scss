@@ -5,6 +5,7 @@
     position: fixed;
     z-index: 99999999;
     display: flex;
+    transition: ease-in-out;
 }
 
 .modal-content {
@@ -19,4 +20,9 @@
     .btn {
         padding: 10px 150px !important
     }
+}
+
+.close {
+    opacity: 0;
+    z-index: -99999999;
 }
