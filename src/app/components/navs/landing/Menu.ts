@@ -5,7 +5,7 @@ export const ModalMenu: ModalNav[] = [
 		name: 'Appetizers',
 		data: {
 			title: 'Appetizers',
-			body: 'tae',
+			body: 'menu',
 			actionButtonName: 'Check Out',
 			callback: void 0,
 		},
@@ -14,7 +14,7 @@ export const ModalMenu: ModalNav[] = [
 		name: 'Short Orders',
 		data: {
 			title: 'Short Orders',
-			body: 'tae',
+			body: 'menu',
 			actionButtonName: 'Check Out',
 			callback: void 0,
 		},
@@ -23,7 +23,7 @@ export const ModalMenu: ModalNav[] = [
 		name: 'Payag Savers',
 		data: {
 			title: 'Payag Savers',
-			body: 'tae',
+			body: 'menu',
 			actionButtonName: 'Check Out',
 			callback: void 0,
 		},
@@ -32,7 +32,7 @@ export const ModalMenu: ModalNav[] = [
 		name: 'Hards',
 		data: {
 			title: 'Hards',
-			body: 'tae',
+			body: 'menu',
 			actionButtonName: 'Check Out',
 			callback: void 0,
 		},
@@ -41,7 +41,7 @@ export const ModalMenu: ModalNav[] = [
 		name: 'Beers',
 		data: {
 			title: 'Beers',
-			body: 'tae',
+			body: 'menu',
 			actionButtonName: 'Check Out',
 			callback: void 0,
 		},

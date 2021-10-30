@@ -34,7 +34,7 @@ export const ModalTopNavs: ModalNav[] = [
 		name: 'Jobs',
 		data: {
 			title: 'Payag Ave. Jobs',
-			body: 'tae',
+			body: 'jobs',
 			actionButtonName: 'Apply',
 			callback: void 0,
 		},
@@ -43,7 +43,7 @@ export const ModalTopNavs: ModalNav[] = [
 		name: 'Internships',
 		data: {
 			title: 'Internships at Payag Ave.',
-			body: 'tae',
+			body: 'internship',
 			actionButtonName: 'Apply',
 			callback: void 0,
 		},
@@ -52,7 +52,7 @@ export const ModalTopNavs: ModalNav[] = [
 		name: 'Sign-in',
 		data: {
 			title: 'Sign-in as Admin or Staff',
-			body: 'tae',
+			body: 'sign-in',
 			actionButtonName: 'Sign-in',
 			callback: void 0,
 		},

@@ -1,5 +1,5 @@
-<div class="backdrop" *ngIf="!close" [@content]>
-    <div class="modal-content">
+<div appStopPropagation class="backdrop" *ngIf="!close" (click)="closeModal()" [@content]>
+    <div appStopPropagation class="modal-content">
         <div class="modal-header d-flex">
             <div class="modal-title text-center w-100">
                 <h1 class="text-center">{{title}}</h1>
@@ -9,10 +9,12 @@
             </div>
         </div>
         <div class="modal-body">
-            <ng-template [ngTemplateOutlet]="body" #name>
-
-            </ng-template>
-
+            <div [ngSwitch]="body">
+                <landing-sign-in *ngSwitchCase="'sign-in'"></landing-sign-in>
+                <landing-jobs *ngSwitchCase="'jobs'"></landing-jobs>
+                <landing-internships *ngSwitchCase="'internship'"></landing-internships>
+                <landing-menu *ngSwitchCase="'menu'"></landing-menu>
+            </div>
         </div>
         <div class="modal-footer d-flex">
             <button class="btn btn-lg btn-dark">{{actionButtonName}}</button>

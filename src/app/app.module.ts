@@ -13,6 +13,9 @@ import { TopBarComponent } from './components/navs/top-bar/top-bar.component'
 import { LandingComponent } from './components/navs/landing/landing.component'
 import { RightModalComponent } from './components/right-modal/right-modal.component'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { StopPropagationDirective } from './directives/stop-propagation.directive'
+import { LandingModule } from './modules/landing/landing.module';
+import { HTMLSanitizerPipe } from './pipes/htmlsanitizer.pipe'
 
 @NgModule({
 	declarations: [
@@ -23,6 +26,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 		SideBarComponent,
 		LandingComponent,
 		RightModalComponent,
+		StopPropagationDirective,
+  HTMLSanitizerPipe,
 	],
 	imports: [
 		BrowserModule,
@@ -30,6 +35,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 		AppRoutingModule,
 		NgbModule,
 		IvyCarouselModule,
+		LandingModule,
 	],
 	providers: [],
 	bootstrap: [AppComponent],
