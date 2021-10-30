@@ -1,1 +1,21 @@
-<div class="backdrop"></div>
+<div class="backdrop">
+    <div class="modal-content">
+        <div class="modal-header d-flex">
+            <div class="modal-title">
+                <h1>{{title}}</h1>
+            </div>
+            <div class="close-btn ml-auto mr-2" role="button">
+                <h1 class="bi bi-x-lg "></h1>
+            </div>
+        </div>
+        <div class="modal-body">
+            <ng-template [ngTemplateOutlet]="body" #name>
+
+            </ng-template>
+
+        </div>
+        <div class="modal-footer d-flex">
+            <button class="btn btn-lg btn-primary">{{actionButtonName}}</button>
+        </div>
+    </div>
+</div>
