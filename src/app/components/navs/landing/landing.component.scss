@@ -40,3 +40,11 @@ h1 {
     margin-top: 5rem;
     padding-top: 5rem;
 }
+
+.menu {
+    margin-top: 5rem;
+    .btn {
+        flex: 1;
+        margin-right: 2rem;
+    }
+}
